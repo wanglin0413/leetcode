@@ -9,6 +9,8 @@ public class SmallLestRange {
         int max = A[A.length - 1] - K;
         int min = A[0] + K;
         int result = Integer.MAX_VALUE;
+        //必然存在一个i，使左侧的都加k，右侧都减K
+        //必须遍历到最后，才能确定I？？
         for(int i = 1 ; i < A.length ; i++){
             //对任意相邻的两个元素，A[i] <A[j], A[i]+K,A[j] -K 是subset of A[i] - K, A[j]+K
             int min2 = A[i] - K;
