@@ -1,3 +1,5 @@
+package unclissified;
+
 public class Flowerbed {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         if(flowerbed.length == 1 && flowerbed[0] == 0)return n<=1;

@@ -1,3 +1,5 @@
+package unclissified;
+
 public class QuadTree {
 
     public Node construct(int[][] grid) {

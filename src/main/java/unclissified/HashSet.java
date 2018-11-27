@@ -1,3 +1,5 @@
+package unclissified;
+
 public class HashSet {
 
     public HashSet() {

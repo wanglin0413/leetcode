@@ -1,3 +1,5 @@
+package unclissified;
+
 public class EqualArray {
     public int minMoves(int[] nums) {
         //1. 结果必须是length的倍数

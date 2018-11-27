@@ -1,3 +1,5 @@
+package unclissified;
+
 public class MaxGap {
     public int maximumGap(int[] nums) {
         if(nums.length <= 1) return 0;

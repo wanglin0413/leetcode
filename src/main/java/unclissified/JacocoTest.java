@@ -1,3 +1,5 @@
+package unclissified;
+
 public class JacocoTest {
 
     public JacocoTest(int p1) {

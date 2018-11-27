@@ -1,3 +1,5 @@
+package unclissified;
+
 import java.util.Arrays;
 
 public class GraphBipartie {

@@ -1,4 +1,4 @@
-
+package unclissified;
 
 public class CountNonConsecutiveOne {
 
