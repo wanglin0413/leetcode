@@ -14,9 +14,21 @@ public class ExcelColumnTitle {
         sb.reverse();
         return sb.toString();
     }
+    public int titleToNumber(String s) {
+        char[] titles = s.toCharArray();
+        int n = titles.length;
+        int result = 0;
+        int base = 1;
+        for(int i = n-1; i >=0; i--){
+            result += (titles[i] - 'A' + 1) * base;
+            base *= 26;
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
         ExcelColumnTitle ect = new ExcelColumnTitle();
         System.out.println(ect.convertToTitle(26));
+        System.out.println(ect.titleToNumber("AB"));
     }
 }
