@@ -25,6 +25,6 @@ public class CountPrimes {
 
     public static void main(String[] args) {
         CountPrimes cp = new CountPrimes();
-        System.out.println(cp.countPrimes(10));
+        System.out.println(cp.countPrimes(5000));
     }
 }
