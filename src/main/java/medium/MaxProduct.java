@@ -7,13 +7,13 @@ public class MaxProduct {
         // 动态规划概念理解---找到状态转移方程，某一状态由上一状态决定？？
         //先考虑简单情况，和最大连续子数组
         // 求出以i结尾的 和最大的连续子数组F[i]
-        //F[i+1] = Max(F[i] + nums[i+1], nums[i+1])
+        //F[i+1] = MaxRec(F[i] + nums[i+1], nums[i+1])
         //最后求global max F[i]
 
 
         //积最大的情况，要考虑负数和零（维护Fmin[i] 和 Fmax[i])
         //Fmin[i+1] = Min(Fmax[i] * nums[i+1], Fmin[i]*nums[i+1), nums[i+1])
-        //Fmax[i+1] = Max(Fmax[i] * nums[i+1], Fmin[i]*nums[i+1), nums[i+1])
+        //Fmax[i+1] = MaxRec(Fmax[i] * nums[i+1], Fmin[i]*nums[i+1), nums[i+1])
 
 //        int[] Fmin = new int[nums.length + 1];
 //        int[] Fmax = new int[nums.length +1];
