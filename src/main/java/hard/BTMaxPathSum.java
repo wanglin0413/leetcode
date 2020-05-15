@@ -1,6 +1,6 @@
 package hard;
 
-import easy.MainClass;
+import utils.MainClass;
 import easy.TreeNode;
 
 public class BTMaxPathSum {
