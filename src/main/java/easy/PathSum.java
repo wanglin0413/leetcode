@@ -1,5 +1,7 @@
 package easy;
 
+import utils.MainClass;
+
 public class PathSum {
     public int pathSum(TreeNode root, int sum) {
         return pathFrom(root, sum) + pathFrom(root.right, sum) + pathFrom(root.left, sum);
