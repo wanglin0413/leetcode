@@ -1,5 +1,7 @@
 package easy;
 
+import utils.TreeNode;
+
 public class MinBTDepth {
     public int minDepth(TreeNode root) {
         if(root == null)return 0;

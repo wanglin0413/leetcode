@@ -1,7 +1,7 @@
 package hard;
 
 import utils.MainClass;
-import easy.TreeNode;
+import utils.TreeNode;
 
 public class RecoverBST {
     //BST的中序遍历，应该是有序的

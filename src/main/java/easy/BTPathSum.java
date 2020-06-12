@@ -1,5 +1,7 @@
 package easy;
 
+import utils.TreeNode;
+
 public class BTPathSum {
     public boolean hasPathSum(TreeNode root, int sum) {
         if(root == null)return false;

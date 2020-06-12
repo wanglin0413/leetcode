@@ -1,7 +1,7 @@
 package hard;
 
 import utils.MainClass;
-import easy.TreeNode;
+import utils.TreeNode;
 
 public class BTMaxPathSum {
     // helper 统计当前root到左右单个path的最大值

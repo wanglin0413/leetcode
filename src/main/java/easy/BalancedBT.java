@@ -1,6 +1,8 @@
 package easy;
 
 
+import utils.TreeNode;
+
 public class BalancedBT {
     //平衡树的定义：左右子树的高度差不大于1
     public boolean isBalanced(TreeNode root) {

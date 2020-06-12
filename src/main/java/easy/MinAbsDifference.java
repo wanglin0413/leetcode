@@ -1,6 +1,7 @@
 package easy;
 
 import utils.MainClass;
+import utils.TreeNode;
 
 public class MinAbsDifference {
     private int sbsDiff = Integer.MAX_VALUE;
