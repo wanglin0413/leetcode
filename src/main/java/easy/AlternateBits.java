@@ -2,7 +2,7 @@ package easy;
 
 public class AlternateBits {
     public boolean hasAlternatingBits(int n) {
-        
+
 //        int i = n % 2;
 //        n = n/2;
 //        while(n != 0){
