@@ -8,6 +8,26 @@ public class Combinations {
 	public List<List<Integer>> combine(int n, int k) {
 		List<List<Integer>> result = new ArrayList<>();
 		List<Integer> stack = new ArrayList<>();
+		combineHelper(result, stack, n, 0, k);
+		return result;
+	}
+
+	private void combineHelper(List<List<Integer>> result, List<Integer> stack, int n, int start, int k) {
+		if(stack.size() == k){
+			result.add(new ArrayList<>(stack));
+			return;
+		}
+		for(int i = start; i < n; i++){
+			stack.add(i);
+			combineHelper(result, stack, n, start+1, k);
+			stack.remove(stack.size() - 1);
+		}
+
+	}
+
+	public List<List<Integer>> combine1(int n, int k) {
+		List<List<Integer>> result = new ArrayList<>();
+		List<Integer> stack = new ArrayList<>();
 		int begin = 0;
 		int count = 0;
 		int cur = 0;
