@@ -1,5 +1,7 @@
 package easy;
 
+import utils.ListNode;
+
 public class ListIntersection {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         //将两个list拼起来
@@ -15,13 +17,4 @@ public class ListIntersection {
         return aI;
     }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
 }

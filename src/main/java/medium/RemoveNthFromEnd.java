@@ -1,5 +1,7 @@
 package medium;
 
+import utils.ListNode;
+
 public class RemoveNthFromEnd {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int count = 1;
@@ -25,11 +27,6 @@ public class RemoveNthFromEnd {
         return ahead.next;
     }
 
-    public static class ListNode {
-     int val;
-     ListNode next;
-    ListNode(int x) { val = x; }
- }
 
     public static void main(String[] args) {
         int[] nums = new int[]{1};

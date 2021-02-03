@@ -9,6 +9,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class MainClass {
+
+    public static ListNode arrayToListNode(int[] input){
+        ListNode head = new ListNode(-1);
+        ListNode cur = head;
+        for(int each : input){
+            cur.next = new ListNode(each);
+            cur = cur.next;
+        }
+        return head.next;
+    }
     public static TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);

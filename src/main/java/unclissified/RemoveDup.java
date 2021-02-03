@@ -1,18 +1,12 @@
 package unclissified;
 
+import utils.ListNode;
+
 /**
  * Created by wanglin03 on 2017/9/30.
  */
 public class RemoveDup {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
+    
 
     public static ListNode deleteDuplicates(ListNode head) {
         if (head == null) return null;
@@ -40,15 +34,15 @@ public class RemoveDup {
     }
 
     public static void main(String[] args) {
-        RemoveDup.ListNode listNode1 = new RemoveDup.ListNode(1);
-        RemoveDup.ListNode listNode2 = new RemoveDup.ListNode(1);
-        RemoveDup.ListNode listNode3 = new RemoveDup.ListNode(2);
-        RemoveDup.ListNode listNode4 = new RemoveDup.ListNode(2);
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(1);
+        ListNode listNode3 = new ListNode(2);
+        ListNode listNode4 = new ListNode(2);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
         listNode3.next = listNode4;
 
-        ListNode newHead = RemoveDup.deleteDuplicates(listNode1);
+        ListNode newHead = deleteDuplicates(listNode1);
         while (newHead != null) {
             System.out.print(newHead.val + " ");
             newHead = newHead.next;

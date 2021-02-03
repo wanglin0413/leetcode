@@ -1,6 +1,7 @@
 package easy;
 
 import java.util.Stack;
+import utils.ListNode;
 
 public class ReverseLinkedList {
     //迭代
@@ -31,11 +32,6 @@ public class ReverseLinkedList {
        newHead.next = head;
        return result;
     }
-    public static class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) { val = x; }
- }
 
     public static void main(String[] args) {
         int[] testcase = new int[]{1,2,3,4,5};

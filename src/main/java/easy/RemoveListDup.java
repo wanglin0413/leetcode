@@ -1,5 +1,7 @@
 package easy;
 
+import utils.ListNode;
+
 public class RemoveListDup {
     public ListNode deleteDuplicates(ListNode head) {
         if(head == null)return null;
@@ -16,9 +18,4 @@ public class RemoveListDup {
         return head;
     }
 
-     public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
 }

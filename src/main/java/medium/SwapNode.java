@@ -1,5 +1,7 @@
 package medium;
 
+import utils.ListNode;
+
 public class SwapNode {
     public ListNode swapPairs(ListNode head) {
         ListNode ahead = new ListNode(-1);
@@ -17,12 +19,6 @@ public class SwapNode {
         }
         return ahead.next;
     }
-
-    public static class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) { val = x; }
- }
 
     public static void main(String[] args) {
         int[] nums = new int[]{1,2,3,4};

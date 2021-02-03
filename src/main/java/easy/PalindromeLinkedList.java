@@ -1,5 +1,7 @@
 package easy;
 
+import utils.ListNode;
+
 public class PalindromeLinkedList {
 
     public boolean isPalindrome(ListNode head) {
@@ -38,14 +40,6 @@ public class PalindromeLinkedList {
             newTail = newHead;
         }
         return newHead;
-    }
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 
     public static void main(String[] args) {

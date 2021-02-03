@@ -1,5 +1,7 @@
 package easy;
 
+import utils.ListNode;
+
 public class RemoveLLVal {
     public ListNode removeElements(ListNode head, int val) {
         ListNode newHead = head;
@@ -28,9 +30,5 @@ public class RemoveLLVal {
         }
         return newHead;
     }
-    public class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) { val = x; }
- }
+
 }
